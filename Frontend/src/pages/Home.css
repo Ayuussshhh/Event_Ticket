@@ -1,0 +1,162 @@
+:root {
+  --main-blue: #5927e5;
+  --purple: #9b89b3;
+  --white-color: #fdf7ff;
+  --dark-color: #362b48;
+  --normal: #4682b4;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-display: swap;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-display: swap;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.intro {
+  text-align: left;
+  max-width: 100%;
+}
+
+.intro h1 {
+  font-size: 44px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "playfair display";
+  font-display: swap;
+}
+
+.intro p {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  color: rgb(76, 73, 73);
+  font-family: "playfair display";
+  font-display: swap;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32%;
+  height: 100%;
+  background: var(--main-blue);
+  z-index: 1;
+}
+
+.explore-btn {
+  background-color: var(--main-blue);
+  border: 3px solid white;
+  color: #fff;
+  font-family: "josefin sans";
+  padding: 14px 40px;
+  font-size: 26px;
+  margin-left: 50px;
+  border-radius: 35px;
+  cursor: pointer;
+  font-display: swap;
+}
+
+.explore-btn:hover {
+  background: white;
+  color: var(--main-blue);
+  border: 1px solid var(--main-blue);
+}
+
+.image-container {
+  max-width: 50%;
+}
+
+.circle {
+  width: 500px; /* Adjust the size of the circle */
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.circle img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+
+  .intro p {
+    font-size: 18px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .explore-btn {
+    font-size: 22px;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+
+  .image-container {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .circle {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 28px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .explore-btn {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+}
